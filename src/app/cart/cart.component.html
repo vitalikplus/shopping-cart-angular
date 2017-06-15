@@ -1,0 +1,34 @@
+<div class="cart-wrapper">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <div>Item</div>
+      <div>Price</div>
+      <div>Quantity</div>
+      <div>Total Price</div>
+      <div></div>
+    </div>
+
+    <!-- Table -->
+    <div class="list-group">
+          <app-cartitem
+            class="list-group-item"
+            *ngFor="let item of cartItems; let i = index"
+            [cartItem]="item"
+            (cartItemDeleted)="onCartItemDeleted($event)"
+            (cartItemChanged)="onCartItemChanged($event)"
+            >
+          </app-cartitem>
+    </div>
+    <div class="panel-footer">
+      <h4>Total {{cartTotal}}</h4>
+      <!--<h4>Total new {{total}}</h4>-->
+    </div>
+  </div>
+</div>
+
+  <!--<input [(ngModel)]="vtText" type="text" [placeholder]="vtText">
+  <button (click)="vtAddItem($event)" >Add item</button>
+  <p [ngStyle]="{}" [ngClass]="{ par: vtDisabled}">
+    input text <b *ngIf="vtDisabled">{{ vtText}}</b>
+  </p>-->
