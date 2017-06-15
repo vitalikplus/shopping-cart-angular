@@ -1,5 +1,5 @@
 ### The shopping cart on angular and typescript.
-Try it here [link to view the app](https://vitalikplus.github.io/shopping-cart-angular/ "shopping-cart-angular app")
+Try it here [link to view the app](http://ng-mycart-angular.s3-website.eu-central-1.amazonaws.com/shop "shopping-cart-angular app")
 This is the simple react-redux app for the shopping cart.  
 
 #### The main features: 
